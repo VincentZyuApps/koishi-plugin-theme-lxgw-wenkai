@@ -13,7 +13,7 @@ export const Config: Schema<Config> = Schema.intersect([
       Schema.const('lxgw-blue').description('霞鹜天青（现代蓝白黑 · 示范图落霞长天风格）'),
       Schema.const('lxgw-autumn').description('秋水长天（青翠水墨 · 示范图竹青雅致风格）'),
       Schema.const('custom').description('自定义专属主色调（展开拾色器）'),
-    ]).default('lxgw-blue').description('主题配色方案预设'),
+    ]).role('radio').default('lxgw-blue').description('主题配色方案预设'),
   }).description('基础配色设置'),
   Schema.union([
     Schema.object({

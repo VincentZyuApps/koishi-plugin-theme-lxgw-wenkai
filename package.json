@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-theme-lxgw-wenkai",
   "description": "极速切片版霞鹜文楷全局控制台字体与现代天青/水墨配色主题 (LXGW WenKai & Modern Blue/Dark theme for Koishi console)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
