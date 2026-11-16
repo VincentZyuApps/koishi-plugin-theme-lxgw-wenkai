@@ -1,6 +1,7 @@
-/* 默认从 CDN 引入切片字体，避免离线打包导致巨大 CSS 体积 */
+/* 霞鹜文楷极速切片 Webfont */
 @import "https://cdn.jsdelivr.net/npm/@free-fonts/lxgw-wenkai@1.0.1/lxgw-wenkai.css";
 
+/* 全局字体覆盖 */
 :root {
   --k-font-family: 'LXGW WenKai', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
@@ -13,6 +14,136 @@ input,
 textarea,
 select,
 .k-content,
-.k-markdown {
+.k-markdown,
+.el-input,
+.el-select-dropdown {
   font-family: var(--k-font-family);
+}
+
+/* ========================================================
+   预设 1: 霞鹜天青 · 现代蓝白黑 (示范图《滕王阁序》风格)
+   ======================================================== */
+
+/* 浅色模式 - 纯净蓝白黑 */
+:root[theme=lxgw-blue-light],
+.theme-root[theme=lxgw-blue-light] {
+  --k-color-primary: #0077c8;
+  --k-color-primary-shade: #005a96;
+  --k-color-primary-tint: #409eff;
+  --k-color-primary-fade: rgba(0, 119, 200, 0.12);
+
+  --bg0: #ffffff;
+  --bg1: #f8fafc;
+  --bg2: #f1f5f9;
+  --bg3: #e2e8f0;
+
+  --fg0: #0f172a;
+  --fg1: #1e293b;
+  --fg2: #475569;
+  --fg3: #94a3b8;
+
+  --k-main-bg: var(--bg0);
+  --k-card-bg: var(--bg1);
+  --k-side-bg: var(--bg2);
+  --k-activity-bg: #e2e8f0;
+  --k-hover-bg: #e2e8f0;
+
+  --k-color-border: #cbd5e1;
+  --k-color-divider: #e2e8f0;
+
+  --k-text-dark: #0f172a;
+  --k-text-normal: #334155;
+  --k-text-light: #64748b;
+  --k-text-active: #0077c8;
+}
+
+/* 深色模式 - 暗黑天青水墨 */
+:root[theme=lxgw-blue-dark],
+.theme-root[theme=lxgw-blue-dark] {
+  --k-color-primary: #38bdf8;
+  --k-color-primary-shade: #0284c7;
+  --k-color-primary-tint: #7dd3fc;
+  --k-color-primary-fade: rgba(56, 189, 248, 0.15);
+
+  --bg0: #060911;
+  --bg1: #0c121e;
+  --bg2: #111827;
+  --bg3: #1e293b;
+
+  --fg0: #ffffff;
+  --fg1: #f8fafc;
+  --fg2: #cbd5e1;
+  --fg3: #64748b;
+
+  --k-main-bg: #090e17;
+  --k-card-bg: #111827;
+  --k-side-bg: #0c121e;
+  --k-activity-bg: #060911;
+  --k-hover-bg: #1e293b;
+
+  --k-color-border: #1e293b;
+  --k-color-divider: #1e293b;
+
+  --k-text-dark: #f8fafc;
+  --k-text-normal: #cbd5e1;
+  --k-text-light: #64748b;
+  --k-text-active: #38bdf8;
+}
+
+/* ========================================================
+   预设 2: 秋水长天 · 竹青水墨 (示范图翠竹清雅风格)
+   ======================================================== */
+
+/* 浅色模式 - 翠竹青 */
+:root[theme=lxgw-autumn-light],
+.theme-root[theme=lxgw-autumn-light] {
+  --k-color-primary: #4a7c36;
+  --k-color-primary-shade: #365c27;
+  --k-color-primary-tint: #65a349;
+  --k-color-primary-fade: rgba(74, 124, 54, 0.12);
+
+  --bg0: #ffffff;
+  --bg1: #fafbf9;
+  --bg2: #f2f5ef;
+  --bg3: #e5ece0;
+
+  --k-main-bg: var(--bg0);
+  --k-card-bg: var(--bg1);
+  --k-side-bg: var(--bg2);
+  --k-activity-bg: var(--bg3);
+  --k-hover-bg: var(--bg3);
+
+  --k-color-border: #d2decb;
+  --k-color-divider: #e2ecd9;
+
+  --k-text-dark: #142010;
+  --k-text-normal: #2d4224;
+  --k-text-active: #4a7c36;
+}
+
+/* 深色模式 - 翡翠夜墨 */
+:root[theme=lxgw-autumn-dark],
+.theme-root[theme=lxgw-autumn-dark] {
+  --k-color-primary: #4ade80;
+  --k-color-primary-shade: #16a34a;
+  --k-color-primary-tint: #86efac;
+  --k-color-primary-fade: rgba(74, 222, 128, 0.15);
+
+  --bg0: #081008;
+  --bg1: #0e1a0e;
+  --bg2: #142414;
+  --bg3: #1d331d;
+
+  --k-main-bg: #091209;
+  --k-card-bg: #142414;
+  --k-side-bg: #0e1a0e;
+  --k-activity-bg: #081008;
+  --k-hover-bg: #1d331d;
+
+  --k-color-border: #233e23;
+  --k-color-divider: #233e23;
+
+  --k-text-dark: #f0fdf4;
+  --k-text-normal: #bbf7d0;
+  --k-text-active: #4ade80;
 }

@@ -1,14 +1,15 @@
 {
   "name": "koishi-plugin-theme-lxgw-wenkai",
-  "description": "极速切片版霞鹜文楷全局控制台字体主题 (LXGW WenKai theme for Koishi console)",
-  "version": "0.1.0",
+  "description": "极速切片版霞鹜文楷全局控制台字体与现代天青/水墨配色主题 (LXGW WenKai & Modern Blue/Dark theme for Koishi console)",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
-    "dist"
+    "dist",
+    "OFL.txt"
   ],
-  "license": "MIT",
+  "license": "MIT AND OFL-1.1",
   "homepage": "https://github.com/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai",
   "repository": {
     "type": "git",
@@ -24,7 +25,9 @@
     "theme",
     "console",
     "lxgw",
-    "font"
+    "wenkai",
+    "font",
+    "ui"
   ],
   "scripts": {
     "build": "tsc -b",
@@ -32,8 +35,8 @@
   },
   "koishi": {
     "description": {
-      "zh": "极速切片版霞鹜文楷全局控制台字体主题",
-      "en": "Fast sliced LXGW WenKai font theme for Koishi console"
+      "zh": "极速切片版霞鹜文楷全局控制台字体与现代天青/水墨双模配色主题",
+      "en": "Fast sliced LXGW WenKai font & modern blue-ink theme for Koishi console"
     },
     "service": {
       "required": [
