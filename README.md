@@ -7,6 +7,12 @@
 
 ## ✨ 特性
 
+### 📸 效果预览
+
+| 浅色主题 · 霞鹜天青 | 深色主题 · 霞鹜夜墨 |
+| :---: | :---: |
+| ![Light Theme](docs/images/preview/light.png) | ![Dark Theme](docs/images/preview/dark.png) |
+
 - 🌸 **无缝适配**：一键开启，无缝覆盖 Koishi 控制台所有卡片、侧边栏、表单输入框、按钮与 Markdown 渲染。
 - ⚡ **极速切片**：基于 `@free-fonts/lxgw-wenkai` 的 Unicode 256 切片 WOFF2 字体，按需拉取微小分片（数 KB），零等待秒开。
 - 🎨 **新中式现代配色 (v0.2.0)**：

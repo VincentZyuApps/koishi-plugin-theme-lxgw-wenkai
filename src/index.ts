@@ -31,25 +31,28 @@ export const Config: Schema<Config> = Schema.intersect([
 ]) as Schema<Config>
 
 export function apply(ctx: Context, config: Config) {
-  // 注入前端入口资源
-  ctx.console.addEntry(process.env.KOISHI_BASE ? [
-    process.env.KOISHI_BASE + '/dist/index.js',
-    process.env.KOISHI_BASE + '/dist/style.css',
-  ] : {
-    dev: resolve(__dirname, '../client/index.ts'),
-    prod: resolve(__dirname, '../dist'),
-  })
-
-  // 广播当前配置给控制台前端，实现即时热更新生效
-  const syncStyle = () => {
-    ctx.console.broadcast('theme-lxgw-wenkai/update-style', {
-      preset: config.colorPreset,
-      customLight: config.customLightColor,
-      customDark: config.customDarkColor,
+  ctx.inject(['console'], (ctx) => {
+    // 优先通过整合包内部工作区路径暴露，解决符号链接逃逸导致的 Vite outside allow list 问题
+    const entryDir = resolve(ctx.baseDir, 'node_modules/koishi-plugin-theme-lxgw-wenkai')
+    ctx.console.addEntry(process.env.KOISHI_BASE ? [
+      process.env.KOISHI_BASE + '/dist/index.js',
+      process.env.KOISHI_BASE + '/dist/style.css',
+    ] : {
+      dev: resolve(entryDir, 'dist'), // 直接使用预打包产物，毫秒级即时生效且无沙箱限制
+      prod: resolve(entryDir, 'dist'),
     })
-  }
 
-  ctx.on('ready', () => {
-    syncStyle()
+    // 广播当前配置给控制台前端，实现即时热更新生效
+    const syncStyle = () => {
+      ctx.console.broadcast('theme-lxgw-wenkai/update-style', {
+        preset: config.colorPreset,
+        customLight: config.customLightColor,
+        customDark: config.customDarkColor,
+      })
+    }
+
+    ctx.on('ready', () => {
+      syncStyle()
+    })
   })
 }
