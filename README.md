@@ -60,7 +60,7 @@ npm install koishi-plugin-theme-lxgw-wenkai
 yarn add koishi-plugin-theme-lxgw-wenkai
 ```
 
-然后在 `koishi.yml` 启用即可：
+在 Koishi WebUI 插件配置/全局设置里面添加插件，或者在 `koishi.yml` 中启用：
 
 ```yaml
 plugins:
