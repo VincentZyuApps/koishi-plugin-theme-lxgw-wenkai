@@ -8,7 +8,7 @@ export const usage = `
 > **<a href="https://github.com/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/blob/main/CHANGELOG.md" target="_blank">📖 查看完整更新日志 →</a>**
 
 <p align="center">
-  <img src="https://socialify.git.ci/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="koishi-plugin-theme-lxgw-wenkai" width="100%">
+  <img src="https://socialify.git.ci/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/image?custom_language=CSS&description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="koishi-plugin-theme-lxgw-wenkai" width="100%">
 </p>
 
 <h1>🌸 koishi-plugin-theme-lxgw-wenkai</h1>
