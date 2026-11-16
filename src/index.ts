@@ -6,8 +6,8 @@ import { Config } from './config'
 export const name = 'theme-lxgw-wenkai'
 export const inject = ['console']
 
-export * from './config'
-export * from './usage'
+export { Config } from './config'
+export { usage } from './usage'
 
 export function apply(ctx: Context, config: Config) {
   ctx.inject(['console'], (ctx) => {

@@ -12,7 +12,7 @@ export const usage = `
 </p>
 
 <h1>🌸 koishi-plugin-theme-lxgw-wenkai</h1>
-<h2>🎯 当前插件版本：v\${pkg.version}</h2>
+<h2>🎯 当前插件版本：v${pkg.version}</h2>
 
 <p>
   <a href="https://www.npmjs.com/package/koishi-plugin-theme-lxgw-wenkai" target="_blank">
@@ -30,7 +30,7 @@ export const usage = `
   </a>
   <br>
   <a href="https://forum.koishi.xyz/t/topic/13815" target="_blank">
-    <img src="https://img.shields.io/badge/Koishi%20Forum-13815-5546A3?style=for-the-badge&logo=\${KOISHI_LOGO_BASE64}&logoColor=white" alt="Koishi Forum">
+    <img src="https://img.shields.io/badge/Koishi%20Forum-13815-5546A3?style=for-the-badge&logo=${KOISHI_LOGO_BASE64}&logoColor=white" alt="Koishi Forum">
   </a>
   <a href="https://qm.qq.com/q/ZHj33L5cuC" target="_blank">
     <img src="https://img.shields.io/badge/QQ群-1085190201-12B7F5?style=flat-square&logo=qq&logoColor=white" alt="QQ群">
