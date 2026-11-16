@@ -1,0 +1,9 @@
+# GitHub Linguist 语言识别规则
+# 将样式文件识别为 CSS，突出主题核心属性
+*.scss linguist-language=CSS
+*.css linguist-language=CSS
+
+# 忽略 TypeScript 与构建中间件，不计入仓库主语言百分比统计
+src/** linguist-detectable=false
+lib/** linguist-vendored
+dist/** linguist-vendored
