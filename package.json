@@ -1,0 +1,54 @@
+{
+  "name": "koishi-plugin-theme-lxgw-wenkai",
+  "description": "极速切片版霞鹜文楷全局控制台字体主题 (LXGW WenKai theme for Koishi console)",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/issues"
+  },
+  "keywords": [
+    "chatbot",
+    "koishi",
+    "plugin",
+    "theme",
+    "console",
+    "lxgw",
+    "font"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "prepack": "node -e \"const fs = require('node:fs'); if (!fs.existsSync('lib/index.js')) { console.error('Missing lib/index.js. Run yarn build theme-lxgw-wenkai before packing or publishing.'); process.exit(1) }\""
+  },
+  "koishi": {
+    "description": {
+      "zh": "极速切片版霞鹜文楷全局控制台字体主题",
+      "en": "Fast sliced LXGW WenKai font theme for Koishi console"
+    },
+    "service": {
+      "required": [
+        "console"
+      ]
+    },
+    "public": [
+      "dist"
+    ]
+  },
+  "peerDependencies": {
+    "@koishijs/plugin-console": "^5.30.0",
+    "koishi": "^4.18.0"
+  },
+  "devDependencies": {
+    "@koishijs/client": "^5.30.0"
+  }
+}
