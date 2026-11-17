@@ -42,7 +42,7 @@
 
 - 🌸 **无缝适配**：一键开启，无缝覆盖 Koishi 控制台所有卡片、侧边栏、表单输入框、按钮与 Markdown 渲染。
 - ⚡ **极速切片**：基于 `@free-fonts/lxgw-wenkai` 的 Unicode 256 切片 WOFF2 字体，按需拉取微小分片（数 KB），零等待秒开。
-- 🎨 **新中式现代配色 (v0.1.1)**：
+- 🎨 **新中式现代配色**：
   - **霞鹜天青（现代蓝白黑）**：灵感源自《滕王阁序》“落霞与孤鹜齐飞，秋水共长天一色”，长天蓝与纯净墨黑白底的极简高雅组合。
   - **秋水长天（竹青水墨）**：灵动清雅的翠竹青墨绿配色。
   - **全自动白天/黑夜双模适配**：跟随系统或在外观设置中自由切换浅色/深色主题。
@@ -60,7 +60,7 @@ npm install koishi-plugin-theme-lxgw-wenkai
 yarn add koishi-plugin-theme-lxgw-wenkai
 ```
 
-在 Koishi WebUI 插件配置/全局设置里面添加插件，或者在 `koishi.yml` 中启用：
+在 Koishi 控制台 WebUI「插件配置」→「全局设置」→「添加插件」里面添加插件，或者在 `koishi.yml` 中启用：
 
 ```yaml
 plugins:
