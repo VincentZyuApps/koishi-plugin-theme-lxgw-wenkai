@@ -1,12 +1,21 @@
-# GitHub Linguist 语言识别规则
-# 将样式文件识别为 CSS，突出主题核心属性
-*.scss linguist-language=CSS
-*.css linguist-language=CSS
-client/** linguist-language=CSS
+# GitHub Linguist 语言统计规则配置
 
-# 忽略 TypeScript 与构建中间件，不计入仓库主语言百分比统计
-*.ts linguist-detectable=false
-*.js linguist-detectable=false
-src/** linguist-detectable=false
+# 1. 样式文件：将 SCSS 归一为 CSS 并纳入统计
+*.scss linguist-language=CSS
+*.scss linguist-detectable=true
+*.css linguist-language=CSS
+*.css linguist-detectable=true
+
+# 2. TypeScript：纳入语言统计
+*.ts linguist-language=TypeScript
+*.ts linguist-detectable=true
+
+# 3. Markdown：所有 Markdown 文件纳入语言统计（覆盖默认 prose/documentation 排除逻辑）
+*.md linguist-language=Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+
+# 4. 构建产物忽略统计
 lib/** linguist-vendored
 dist/** linguist-vendored
+
