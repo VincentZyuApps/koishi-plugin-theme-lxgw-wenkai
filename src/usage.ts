@@ -11,7 +11,7 @@ export const usage = `
   <img src="https://socialify.git.ci/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/image?custom_language=CSS&description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto" alt="koishi-plugin-theme-lxgw-wenkai" width="100%">
 </p>
 
-<h1>🌸 koishi-plugin-theme-lxgw-wenkai</h1>
+<h1>🖌️ koishi-plugin-theme-lxgw-wenkai</h1>
 <h2>🎯 当前插件版本：v${pkg.version}</h2>
 
 <p>

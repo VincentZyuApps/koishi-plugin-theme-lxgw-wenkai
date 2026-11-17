@@ -4,7 +4,7 @@
 
 ![koishi-plugin-theme-lxgw-wenkai](https://socialify.git.ci/VincentZyuApps/koishi-plugin-theme-lxgw-wenkai/image?custom_language=CSS&description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Ff%2Ff3%2FKoishi.js_Logo.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Auto)
 
-# 🌸 koishi-plugin-theme-lxgw-wenkai
+# 🖌️ koishi-plugin-theme-lxgw-wenkai
 
 [![npm](https://img.shields.io/npm/v/koishi-plugin-theme-lxgw-wenkai?style=flat-square&logo=npm)](https://www.npmjs.com/package/koishi-plugin-theme-lxgw-wenkai)
 [![npm-download](https://img.shields.io/npm/dm/koishi-plugin-theme-lxgw-wenkai?style=flat-square&logo=npm)](https://npm-stat.com/charts.html?package=koishi-plugin-theme-lxgw-wenkai)
