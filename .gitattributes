@@ -15,7 +15,12 @@
 *.md linguist-detectable=true
 *.md linguist-documentation=false
 
-# 4. 构建产物忽略统计
+# 4. OFL 字体许可证：识别为 OpenType Feature File 字体特性语言
+OFL.txt linguist-language=OpenType-Feature-File
+OFL.txt linguist-detectable=true
+OFL.txt linguist-documentation=false
+
+# 5. 构建产物忽略统计
 lib/** linguist-vendored
 dist/** linguist-vendored
 
